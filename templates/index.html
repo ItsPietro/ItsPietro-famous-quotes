@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Famous Quotes</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <h1>✦ Famous Quotes</h1>
+      <button id="btn-dark-mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero: Random Quote -->
+  <section id="hero">
+    <div id="quote-card" class="card loading">
+      <div class="quote-icon">&ldquo;</div>
+      <p id="quote-text">Loading...</p>
+      <p id="quote-author">— &nbsp;</p>
+      <span id="quote-category" class="badge"></span>
+    </div>
+    <button id="btn-random" class="btn-primary">🎲 New Random Quote</button>
+  </section>
+
+  <!-- Search & Filter Bar -->
+  <section id="search-section">
+    <h2>Browse All Quotes</h2>
+    <div id="search-bar">
+      <input
+        type="text"
+        id="input-author"
+        placeholder="Search by author..."
+        autocomplete="off"
+      />
+      <select id="select-category">
+        <option value="">All Categories</option>
+      </select>
+      <button id="btn-search" class="btn-primary">Search</button>
+      <button id="btn-clear" class="btn-secondary">Clear</button>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results-section">
+    <p id="results-count"></p>
+    <div id="quotes-grid"></div>
+    <p id="no-results" class="hidden">No quotes found. Try a different search.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>100 famous quotes across 10 categories</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
